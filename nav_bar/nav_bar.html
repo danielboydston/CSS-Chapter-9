@@ -10,16 +10,59 @@ body {
 	margin: 0;
 	padding: 20px;
 }
+ul#mainNav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-right: 1px dashed #999;
+	float: left;
+}
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+#mainNav a {
+	color: #000;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px dashed #999;
+	padding: 7px 5px;
+	display: block;
+	background-color: #e7e7e7;
+	background-image: url(images/link.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 7px 5px 7px 30px;
+	border-right: none;
+}
+#mainNav a:hover {
+	font-weight: bold;
+	background: #b2f511 url(images/go.png) no-repeat 5px 50%;
+}
+body#home a#homeLink, body#feature a#featureLink, body#experts a#expertsLink, body#quiz a#quizLink, body#projects a#projectsLink, body#horoscopes a#horoscopesLink {
+	background: #fff url(images/bg_here.png) no-repeat 5px 50%;
+	padding-right: 15px;
+	padding-left: 30px;
+	font-weight: bold;
+}
+body#home a#homeLink:hover, body#feature a#featureLink:hover, body#experts a#expertsLink:hover, body#quiz a#quizLink:hover, body#projects a#projectsLink:hover, body#horoscopes a#horoscopesLink:hover {
+	background: #e7e7e7 url(images/home.png) no-repeat 5px 50%;
+	padding-right: 15px;
+	padding-left: 30px;
+	font-weight: bold;
+	color: blue;
+}
 </style>
 </head>
-<body>
-  <ul>
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/features/">Features</a></li>
-    <li><a href="/experts/">Experts</a></li>
-    <li><a href="/quiz/">Quiz</a></li>
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/horoscopes/">Horoscopes</a></li>
+<body id="quiz">
+  <ul id="mainNav">
+    <li><a href="/index.html" id="homeLink">Home</a></li>
+    <li><a href="/features/" id="featureLink">Features</a></li>
+    <li><a href="/experts/" id="expertsLink">Experts</a></li>
+    <li><a href="/quiz/" id="quizLink">Quiz</a></li>
+    <li><a href="/projects/" id="projectsLink">Projects</a></li>
+    <li><a href="/horoscopes/" id="horoscopesLink">Horoscopes</a></li>
   </ul>
 </body>
 </html>

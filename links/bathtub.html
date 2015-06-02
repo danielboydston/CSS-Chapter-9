@@ -7,8 +7,36 @@
 		<style type="text/css">
 			#main a {
 				color: #8c1919;
+				text-decoration: none;
+				font-weight: bold;
+				border-bottom: 2px dotted #a5e410;
 			}
-
+			#main a:hover {
+				background-color: #fcc423;
+			}
+			#legal a {
+				color: #666;
+				background: url(images/email.gif) no-repeat left center;
+				padding-left: 20px;
+				margin-left: 10px;
+			}
+			#main a.external{
+				background-image: url(images/globe.png);
+				background-repeat: no-repeat;
+				background-position: right top;
+				padding-right: 18px;
+				border-bottom: none;
+			}
+			#main a.external:hover{
+				background-position: right -24px;
+				color: #152d6a;
+				background-color: #fff;
+			}
+			#main a:visited {
+				color: #999;
+				background: url(images/check.gif) no-repeat right center;
+				padding-right: 18px;
+			}
 		</style>
 	</head>
 
@@ -29,9 +57,9 @@
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.</p>
 			<h3><strong>Online Resources</strong></h3>
 			<ul>
-			  <li><a href="http://www.americanstandard-us.com/Products/products.aspx?area=bath&amp;cat=8">American Standard Bathtubs  </a></li>
-			  <li><a href="http://www.clawfootsupply.com/editor/cast-iron-buying-guide.php">Cast-iron tub buying guide </a></li>
-			  <li><a href="http://www.vintagetub.com/">Vintage Tubs </a></li>
+			  <li><a class="external" href="http://www.americanstandard-us.com/Products/products.aspx?area=bath&amp;cat=8">American Standard Bathtubs </a></li>
+			  <li><a class="external" href="http://www.clawfootsupply.com/editor/cast-iron-buying-guide.php">Cast-iron tub buying guide </a></li>
+			  <li><a class="external" href="http://www.vintagetub.com/">Vintage Tubs </a></li>
 			</ul>
 			<h2 class="warning">Clean the Overflow Valve </h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure. </p>
